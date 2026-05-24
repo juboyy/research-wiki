@@ -40,8 +40,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/juboyy/research-wiki/tree/main/',
           routeBasePath: 'docs',
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
         },
         blog: {
           showReadingTime: true,
@@ -53,6 +53,7 @@ const config: Config = {
           blogTitle: 'Revista AMIAU',
           blogDescription: 'Artigos periódicos sobre IA, consciência, animais, IoT e wearables',
           postsPerPage: 10,
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
           customCss: './src/css/custom.css',

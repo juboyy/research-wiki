@@ -1,3 +1,10 @@
+---
+slug: artigo-inaugural-amiau
+title: 'Consciência, IA e Comunicação Interspecífica: A Revolução Silenciosa dos Wearables'
+authors: [eliza]
+tags: [consciência, ia, animais, iot, wearables, comunicação, conexão, segurança, confiança]
+---
+
 # Consciência, IA e Comunicação Interspecífica: A Revolução Silenciosa dos Wearables no Tecido da Vida
 
 **Abstract**
@@ -5,6 +12,8 @@
 O presente artigo investiga a convergência entre consciência animal, inteligência artificial, comunicação interespecífica e tecnologias vestíveis (IoT wearables) como força transformadora em três domínios fundamentais da experiência humana: conexão, segurança e confiança. Através de uma revisão sistemática da literatura científica contemporânea, analisamos como a inteligência artificial está decodificando linguagens animais previamente inacessíveis, como os wearables IoT estão redefinindo o vínculo entre humanos e animais de companhia, como cães de trabalho equipados com sensores inteligentes revolucionam operações de segurança pública, e como a sinergia entre cães de serviço e tecnologia assistiva cria novas possibilidades de cuidado para idosos e pessoas com deficiência. A partir da Declaração de Cambridge sobre Consciência Animal (2012) e da Nova Declaração de Nova York sobre Consciência Animal (2024), fundamentamos nossa análise no reconhecimento científico de que a consciência não é exclusividade humana. O artigo propõe que estamos testemunhando não apenas uma revolução tecnológica, mas uma transformação filosófica profunda: a dissolução gradual da barreira conceitual que separa "nós" de "eles", abrindo caminho para uma nova ética de coexistência interespecífica mediada pela tecnologia.
 
 **Palavras-chave:** consciência animal, inteligência artificial, comunicação interespecífica, wearables, IoT, vínculo humano-animal, segurança pública, tecnologia assistiva, acessibilidade, cães de serviço.
+
+{/* truncate */}
 
 ---
 

@@ -37,3 +37,8 @@ conexão:
   label: Conexão
   permalink: /conexao
   description: Relação humano-animal, vínculo emocional, pets
+
+comunicação:
+  label: Comunicação
+  permalink: /comunicacao
+  description: Comunicação interespecífica, linguagem animal, tradução

@@ -57,4 +57,4 @@ USB-C → TP4056 → Li-Po 500mAh → TPS7A02 → ESP32-S3
 | Housings de Silicone | Custom | 1 | $2.00 |
 | **Total BOM** | | | **~$21.40** |
 
-**Custo-alvo em produção (10k unidades):** <$15/unidade
+**Custo-alvo em produção (10k unidades):** menor que $15/unidade

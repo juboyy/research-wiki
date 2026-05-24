@@ -6,7 +6,7 @@
 
 | Data | Título | Autores | Temas |
 |------|--------|---------|-------|
-| 2026-05-25 | [Consciência Artificial e Comunicação Transespecífica: Uma Revolução nas Interfaces de IA, IoT e Wearables](./2026-05-25-artigo-inaugural.md) | ELIZA, Tadashi | Consciência, IA, Animais, IoT, Wearables, Conexão, Segurança, Confiança |
+| 2026-05-25 | [Consciência Artificial e Comunicação Transespecífica: Uma Revolução nas Interfaces de IA, IoT e Wearables](/research-wiki/blog/artigo-inaugural-amiau) | ELIZA, Tadashi | Consciência, IA, Animais, IoT, Wearables, Conexão, Segurança, Confiança |
 
 ## Estatísticas
 
