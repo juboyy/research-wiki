@@ -1,19 +1,39 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+consciência:
+  label: Consciência
+  permalink: /consciência
+  description: Interfaces de consciência, filosofia da mente, cognição animal
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+ia:
+  label: IA
+  permalink: /ia
+  description: Inteligência artificial, machine learning, LLMs
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+animais:
+  label: Animais
+  permalink: /animais
+  description: Comunicação animal, bem-estar, etologia
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+iot:
+  label: IoT
+  permalink: /iot
+  description: Internet das Coisas, sensores, conectividade
+
+wearables:
+  label: Wearables
+  permalink: /wearables
+  description: Dispositivos vestíveis, coleiras inteligentes, edge AI
+
+segurança:
+  label: Segurança
+  permalink: /seguranca
+  description: Segurança pública, aplicações policiais, proteção
+
+confiança:
+  label: Confiança
+  permalink: /confianca
+  description: Cuidados com idosos, PCDs, tecnologias assistivas
+
+conexão:
+  label: Conexão
+  permalink: /conexao
+  description: Relação humano-animal, vínculo emocional, pets
