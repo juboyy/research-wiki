@@ -1,57 +1,71 @@
 import type {ReactNode} from 'react';
-import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
-type FeatureItem = {
+interface FeatureItem {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  emoji: string;
   description: ReactNode;
-};
+  color: string;
+  link: string;
+}
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Conexão',
+    emoji: '🐕',
+    color: '#FF6B6B',
+    link: '/research-wiki/docs/conexao',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A revolução do vínculo humano-animal através de wearables inteligentes. 
+        Comunicação interespecífica, pet tech e a nova economia do afeto.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Segurança',
+    emoji: '🛡️',
+    color: '#4ECDC4',
+    link: '/research-wiki/docs/seguranca',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Tecnologias de ponta para segurança pública e defesa. 
+        K9 tech, smart cities, wearables táticos e vigilância inteligente.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Confiança',
+    emoji: '🤝',
+    color: '#45B7D1',
+    link: '/research-wiki/docs/confianca',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Acessibilidade e inclusão através da tecnologia. 
+        Silver economy, health tech, assistência para idosos e PCDs.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, emoji, description, color, link}: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+    <div className="col col--4">
+      <a href={link} className={styles.featureLink}>
+        <div className={styles.featureCard} style={{'--feature-color': color} as React.CSSProperties}>
+          <div className={styles.featureIcon} style={{backgroundColor: color + '15'}}>
+            <span style={{fontSize: '3rem'}}>{emoji}</span>
+          </div>
+          <Heading as="h3" style={{color, marginTop: '1rem'}}>
+            {title}
+          </Heading>
+          <p>{description}</p>
+          <div className={styles.featureArrow} style={{color}}>
+            Explorar →
+          </div>
+        </div>
+      </a>
     </div>
   );
 }
@@ -60,6 +74,14 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.sectionHeader}>
+          <Heading as="h2" className={styles.sectionTitle}>
+            Três Pilares da Revolução
+          </Heading>
+          <p className={styles.sectionSubtitle}>
+            Consciência, IA e Comunicação Interspecífica
+          </p>
+        </div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
