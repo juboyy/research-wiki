@@ -227,79 +227,79 @@ Estamos aprendendo a escutar. E na escuta, talvez, esteja o início de uma étic
 
 ## Referências
 
-ACM. (2025). KHAIT: K-9 Handler Artificial Intelligence Teaming for Collaborative Sensemaking. *Proceedings of the 30th International Conference on Intelligent User Interfaces*. https://dl.acm.org/doi/full/10.1145/3708359.3712107
+ACM. (2025). KHAIT: K-9 Handler Artificial Intelligence Teaming for Collaborative Sensemaking. *Proceedings of the 30th International Conference on Intelligent User Interfaces*. [https://dl.acm.org/doi/full/10.1145/3708359.3712107](https://dl.acm.org/doi/full/10.1145/3708359.3712107)
 
-Ambiq. (2025, February 18). Pardon My Woof: Will AI Help Humans Talk to Animals? https://ambiq.com/blog/will-ai-help-humans-talk-to-animals/
+Ambiq. (2025, February 18). Pardon My Woof: Will AI Help Humans Talk to Animals? [https://ambiq.com/blog/will-ai-help-humans-talk-to-animals/](https://ambiq.com/blog/will-ai-help-humans-talk-to-animals/)
 
-Andreassen, A., et al. (2024). Semantic compression of sperm whale signals. *Preprint*.
+Andreassen, A., et al. (2024). Semantic compression of sperm whale signals. *Preprint*. [https://doi.org/10.48550/arXiv.2411.18325](https://doi.org/10.48550/arXiv.2411.18325)
 
-Arahori, M., et al. (2021). The Emotional Lives of Companion Animals: Attachment and Subjective Claims by Owners of Cats and Dogs. *Maastricht University Repository*.
+Arahori, M., et al. (2021). The Emotional Lives of Companion Animals: Attachment and Subjective Claims by Owners of Cats and Dogs. *Maastricht University Repository*. [https://doi.org/10.26481/dis.20211125ma](https://doi.org/10.26481/dis.20211125ma)
 
-Birch, J., Schnell, A., & Clayton, N. (2020). Dimensions of Animal Consciousness. *Trends in Cognitive Sciences*, 24(9), 789-801.
+Birch, J., Schnell, A., & Clayton, N. (2020). Dimensions of Animal Consciousness. *Trends in Cognitive Sciences*, 24(9), 789-801. [DOI: 10.1016/j.tics.2020.07.007](https://doi.org/10.1016/j.tics.2020.07.007)
 
-Bozkurt, A., Roberts, D. L., Sherman, B. L., et al. (2014). Toward cyber-enhanced working dogs for search and rescue. *IEEE Intelligent Systems*, 29(6), 32-39.
+Bozkurt, A., Roberts, D. L., Sherman, B. L., et al. (2014). Toward cyber-enhanced working dogs for search and rescue. *IEEE Intelligent Systems*, 29(6), 32-39. [DOI: 10.1109/MIS.2014.77](https://doi.org/10.1109/MIS.2014.77)
 
-Cambridge Declaration on Consciousness. (2012, July 7). Convened at the Francis Crick Memorial Conference, Cambridge, UK.
+Cambridge Declaration on Consciousness. (2012, July 7). Convened at the Francis Crick Memorial Conference, Cambridge, UK. [https://fcmconference.org](https://fcmconference.org)
 
-Canine Companions. (2024, April 8). CanineAlert™: New Patented Wearable Technology Provides Support to People with Disabilities. https://canine.org/news/caninealert-device-tech/
+Canine Companions. (2024, April 8). CanineAlert™: New Patented Wearable Technology Provides Support to People with Disabilities. [https://canine.org/news/caninealert-device-tech/](https://canine.org/news/caninealert-device-tech/)
 
-Cooperative Paws. (2024, March 25). Service Dogs and Smart Technology: A Dynamic Duo. https://cooperativepaws.com/service-dogs-and-smart-technology-a-dynamic-duo/
+Cooperative Paws. (2024, March 25). Service Dogs and Smart Technology: A Dynamic Duo. [https://cooperativepaws.com/service-dogs-and-smart-technology-a-dynamic-duo/](https://cooperativepaws.com/service-dogs-and-smart-technology-a-dynamic-duo/)
 
 FCDO. (2016, November 11). Funding: K9 Wearable Tech & Global Travel Assessment System. *Foreign, Commonwealth & Development Office Blogs*.
 
-FitBark. (2022, August 11). IoT Goes to the Dogs: The Story of a Pet Wearable. https://www.fitbark.com/blog/iot-goes-to-the-dogs-the-story-of-a-pet-wearable/
+FitBark. (2022, August 11). IoT Goes to the Dogs: The Story of a Pet Wearable. [https://www.fitbark.com/blog/iot-goes-to-the-dogs-the-story-of-a-pet-wearable/](https://www.fitbark.com/blog/iot-goes-to-the-dogs-the-story-of-a-pet-wearable/)
 
-Fujairah Police General Command. (2025, February 21). Smart dog collars with GPS and SIM card. *Khaleej Times*. https://www.khaleejtimes.com/uae/emergencies/uae-how-smart-dog-collars-with-gps-sim-card-help-police-track-k9-units-in-search-operations
+Fujairah Police General Command. (2025, February 21). Smart dog collars with GPS and SIM card. *Khaleej Times*. [https://www.khaleejtimes.com/uae/emergencies/uae-how-smart-dog-collars-with-gps-sim-card-help-police-track-k9-units-in-search-operations](https://www.khaleejtimes.com/uae/emergencies/uae-how-smart-dog-collars-with-gps-sim-card-help-police-track-k9-units-in-search-operations)
 
-Garland, E. C., et al. (2011). Dynamic horizontal cultural transmission of humpback whale song. *Science*, 334(6058), 1692-1694.
+Garland, E. C., et al. (2011). Dynamic horizontal cultural transmission of humpback whale song. *Science*, 334(6058), 1692-1694. [DOI: 10.1126/science.1211211](https://doi.org/10.1126/science.1211211)
 
-GM Insights. (2025, June 4). Pet Tech Revolution: How AI & IoT Are Changing Pet Care. https://www.gminsights.com/blogs/how-ai-and-wearables-are-changing-pet-parenting
+GM Insights. (2025, June 4). Pet Tech Revolution: How AI & IoT Are Changing Pet Care. [https://www.gminsights.com/blogs/how-ai-and-wearables-are-changing-pet-parenting](https://www.gminsights.com/blogs/how-ai-and-wearables-are-changing-pet-parenting)
 
-Graham, K. E., et al. (2022). A socio-ecological perspective on the gestural communication of great ape species. *Ethology Ecology & Evolution*, 34(2), 235-259.
+Graham, K. E., et al. (2022). A socio-ecological perspective on the gestural communication of great ape species. *Ethology Ecology & Evolution*, 34(2), 235-259. [DOI: 10.1080/03949370.2021.1968950](https://doi.org/10.1080/03949370.2021.1968950)
 
-Hare, B., & Tomasello, M. (2005). Human-like social skills in dogs? *Trends in Cognitive Sciences*, 9(9), 439-444.
+Hare, B., & Tomasello, M. (2005). Human-like social skills in dogs? *Trends in Cognitive Sciences*, 9(9), 439-444. [DOI: 10.1016/j.tics.2005.07.003](https://doi.org/10.1016/j.tics.2005.07.003)
 
-ICCS. (2025, July 31). Highlights of The Second ICCS Conference "AI and Sentience". https://hardproblem.it/posts/ICCS-Conference/highlights-of-the-second-iccs-conference-ai-and-sentience/
+ICCS. (2025, July 31). Highlights of The Second ICCS Conference "AI and Sentience". [https://hardproblem.it/posts/ICCS-Conference/highlights-of-the-second-iccs-conference-ai-and-sentience/](https://hardproblem.it/posts/ICCS-Conference/highlights-of-the-second-iccs-conference-ai-and-sentience/)
 
-Janik, V. M., & Sayigh, L. S. (2013). Communication in bottlenose dolphins. *Animal Behaviour*, 86(1), 13-20.
+Janik, V. M., & Sayigh, L. S. (2013). Communication in bottlenose dolphins. *Animal Behaviour*, 86(1), 13-20. [DOI: 10.1016/j.anbehav.2013.04.019](https://doi.org/10.1016/j.anbehav.2013.04.019)
 
 Kasnesis, P., et al. (2022). Wearable Devices for Animals in Search and Rescue. *SafeGreece 2020 Proceedings*.
 
-Kastak, C. R., & Schusterman, R. J. (2002). Sea lions and equivalence relations. *Journal of the Experimental Analysis of Behavior*, 78(3), 449-464.
+Kastak, C. R., & Schusterman, R. J. (2002). Sea lions and equivalence relations. *Journal of the Experimental Analysis of Behavior*, 78(3), 449-464. [DOI: 10.1901/jeab.2002.78-449](https://doi.org/10.1901/jeab.2002.78-449)
 
-Kimmela Center. (2024, May 5). A New Declaration on Animal Consciousness. https://www.kimmela.org/2024/05/05/a-new-declaration-on-animal-consciousness/
+Kimmela Center. (2024, May 5). A New Declaration on Animal Consciousness. [https://www.kimmela.org/2024/05/05/a-new-declaration-on-animal-consciousness/](https://www.kimmela.org/2024/05/05/a-new-declaration-on-animal-consciousness/)
 
-Kustom Signals. (2022, October 28). The Latest K9 Tech: Chasing Suspects & Saving Lives. https://kustomsignals.com/blog/the-latest-k9-tech-chasing-suspects-saving-lives
+Kustom Signals. (2022, October 28). The Latest K9 Tech: Chasing Suspects & Saving Lives. [https://kustomsignals.com/blog/the-latest-k9-tech-chasing-suspects-saving-lives](https://kustomsignals.com/blog/the-latest-k9-tech-chasing-suspects-saving-lives)
 
-Mather, J. A. (2022). The case for octopus consciousness: temporality. *NeuroSci*, 3(2), 245-261.
+Mather, J. A. (2022). The case for octopus consciousness: temporality. *NeuroSci*, 3(2), 245-261. [DOI: 10.3390/neurosci3020020](https://doi.org/10.3390/neurosci3020020)
 
-Martínez-Martínez, A., et al. (2024). The Impact of Psychosocial Factors on the Human—Pet Bond. *PMC*, 12248966.
+Martínez-Martínez, A., et al. (2024). The Impact of Psychosocial Factors on the Human—Pet Bond. *PMC*, 12248966. [https://pmc.ncbi.nlm.nih.gov/articles/PMC12248966/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12248966/)
 
-McComb, K., et al. (2014). Elephant infrasound and human-elephant conflict. *Current Biology*, 24(3), 348-352.
+McComb, K., et al. (2014). Elephant infrasound and human-elephant conflict. *Current Biology*, 24(3), 348-352. [DOI: 10.1016/j.cub.2013.12.043](https://doi.org/10.1016/j.cub.2013.12.043)
 
-Nieder, A., Wagener, L., & Rinnert, P. (2020). A neural correlate of sensory consciousness in a corvid bird. *Science*, 369(6511), 1626-1629.
+Nieder, A., Wagener, L., & Rinnert, P. (2020). A neural correlate of sensory consciousness in a corvid bird. *Science*, 369(6511), 1626-1629. [DOI: 10.1126/science.abc7627](https://doi.org/10.1126/science.abc7627)
 
-Raskin, C., & Mineev, A. (2020). Earth Species AI: Decoding Non-Human Communication. *Project Overview*.
+Raskin, C., & Mineev, A. (2020). Earth Species AI: Decoding Non-Human Communication. *Project Overview*. [https://www.earthspecies.org/](https://www.earthspecies.org/)
 
-Robobionics. (2025, February 19). How Wearable Tech Is Enhancing Disability Assistance Devices (2025-2030). https://www.robobionics.in/blog/how-wearable-tech-is-enhancing-disability-assistance-devices-2025-2030/
+Robobionics. (2025, February 19). How Wearable Tech Is Enhancing Disability Assistance Devices (2025-2030). [https://www.robobionics.in/blog/how-wearable-tech-is-enhancing-disability-assistance-devices-2025-2030/](https://www.robobionics.in/blog/how-wearable-tech-is-enhancing-disability-assistance-devices-2025-2030/)
 
 SafeGreece. (2020). FASTER: Wearable Devices for Animals. *SafeGreece 2020 Online Proceedings*.
 
-Savage-Rumbaugh, E. S., et al. (1986). Symbolic communication in chimpanzees. *Journal of Experimental Psychology: General*, 115(3), 211-234.
+Savage-Rumbaugh, E. S., et al. (1986). Symbolic communication in chimpanzees. *Journal of Experimental Psychology: General*, 115(3), 211-234. [DOI: 10.1037/0096-3445.115.3.211](https://doi.org/10.1037/0096-3445.115.3.211)
 
-Schnell, A. K., et al. (2021). Lateralization of eye use in cuttlefish. *Frontiers in Physiology*, 7, 620.
+Schnell, A. K., et al. (2021). Lateralization of eye use in cuttlefish. *Frontiers in Physiology*, 7, 620. [DOI: 10.3389/fphys.2016.00620](https://doi.org/10.3389/fphys.2016.00620)
 
-Schusterman, R. J., & Kastak, D. (1993). A California sea lion (Zalophus californianus) is capable of forming equivalence relations. *The Psychological Record*, 43(3), 823-839.
+Schusterman, R. J., & Kastak, D. (1993). A California sea lion (Zalophus californianus) is capable of forming equivalence relations. *The Psychological Record*, 43(3), 823-839. [DOI: 10.1007/BF03395976](https://doi.org/10.1007/BF03395976)
 
-Schwitzgebel, E. (2025, October 8). AI & Consciousness. *University of California Riverside*.
+Schwitzgebel, E. (2025, October 8). AI & Consciousness. *University of California Riverside*. [https://faculty.ucr.edu/~eschwitz/SchwitzPapers/AIConsciousness-251008.pdf](https://faculty.ucr.edu/~eschwitz/SchwitzPapers/AIConsciousness-251008.pdf)
 
-Sebo, J., Andrews, K., & Birch, J. (2024). New York Declaration on Animal Consciousness. *New York University*.
+Sebo, J., Andrews, K., & Birch, J. (2024). New York Declaration on Animal Consciousness. *New York University*. [https://www.nyu.edu/gsas/dept/philo/faculty/documents/ny-declaration.pdf](https://www.nyu.edu/gsas/dept/philo/faculty/documents/ny-declaration.pdf)
 
-ValidGrad. (2025, July 4). How to Become a K9 Officer: The Complete Insider's Guide. https://validgrad.com/blog/become-k9-officer-guide/
+ValidGrad. (2025, July 4). How to Become a K9 Officer: The Complete Insider's Guide. [https://validgrad.com/blog/become-k9-officer-guide/](https://validgrad.com/blog/become-k9-officer-guide/)
 
-Valentin, G., et al. (2016). Creating collar-sensed motion gestures for dog-human communication in service applications. *Proceedings of the 2016 ACM International Symposium on Wearable Computers*, 100-107.
+Valentin, G., et al. (2016). Creating collar-sensed motion gestures for dog-human communication in service applications. *Proceedings of the 2016 ACM International Symposium on Wearable Computers*, 100-107. [DOI: 10.1145/2971763.2971779](https://doi.org/10.1145/2971763.2971779)
 
-Working Dog Magazine. (2025, November 4). Working Dogs in 2026: The Biggest Shift in a Decade. https://www.workingdogmagazine.com/working-dogs-in-2026/
+Working Dog Magazine. (2025, November 4). Working Dogs in 2026: The Biggest Shift in a Decade. [https://www.workingdogmagazine.com/working-dogs-in-2026/](https://www.workingdogmagazine.com/working-dogs-in-2026/)
 
 ---
 
