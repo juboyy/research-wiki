@@ -1,30 +1,243 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * AMIAU Research Wiki — Custom Styles
+ * Cores: Conexão (coral), Segurança (azul), Confiança (verde)
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --amiau-conexao: #FF6B6B;
+  --amiau-seguranca: #4ECDC4;
+  --amiau-confianca: #45B7D1;
+  --amiau-dark: #2C3E50;
+  --amiau-light: #F8F9FA;
+  
+  --ifm-color-primary: #2C3E50;
+  --ifm-color-primary-dark: #34495E;
+  --ifm-color-primary-darker: #1A252F;
+  --ifm-color-primary-darkest: #0D1317;
+  --ifm-color-primary-light: #45B7D1;
+  --ifm-color-primary-lighter: #4ECDC4;
+  --ifm-color-primary-lightest: #FF6B6B;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-height: 70px;
+  --ifm-font-family-base: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  --ifm-heading-font-family: 'Georgia', 'Times New Roman', serif;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #4ECDC4;
+  --ifm-color-primary-dark: #45B7D1;
+  --ifm-color-primary-darker: #3DA3BF;
+  --ifm-color-primary-darkest: #2E8BAB;
+  --ifm-color-primary-light: #FF6B6B;
+  --ifm-color-primary-lighter: #FF8E8E;
+  --ifm-color-primary-lightest: #FFB1B1;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar mais elegante */
+.navbar {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, var(--amiau-dark) 0%, #34495E 100%);
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: white !important;
+}
+
+.navbar__link {
+  color: rgba(255,255,255,0.9) !important;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar__link:hover {
+  color: var(--amiau-seguranca) !important;
+}
+
+/* Hero section customizada */
+.heroBanner {
+  background: linear-gradient(135deg, var(--amiau-dark) 0%, var(--amiau-confianca) 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.1;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+/* Cards dos 3 pilares */
+.pillar-card {
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 5px solid;
+}
+
+.pillar-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.pillar-conexao {
+  background: linear-gradient(135deg, #FFF5F5 0%, #FFE0E0 100%);
+  border-left-color: var(--amiau-conexao);
+}
+
+.pillar-seguranca {
+  background: linear-gradient(135deg, #F0FDFC 0%, #E0F7F6 100%);
+  border-left-color: var(--amiau-seguranca);
+}
+
+.pillar-confianca {
+  background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+  border-left-color: var(--amiau-confianca);
+}
+
+/* Blog posts mais elegantes */
+.blog-post-item {
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s;
+}
+
+.blog-post-item:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+
+.blog-post-title {
+  font-size: 1.8rem;
+  color: var(--amiau-dark);
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Sidebar mais bonita */
+.theme-doc-sidebar-container {
+  background: linear-gradient(180deg, var(--amiau-light) 0%, white 100%);
+}
+
+/* Footer elegante */
+.footer {
+  background: linear-gradient(135deg, var(--amiau-dark) 0%, #34495E 100%);
+  color: white;
+}
+
+.footer__link-item {
+  color: rgba(255,255,255,0.8) !important;
+  transition: color 0.3s;
+}
+
+.footer__link-item:hover {
+  color: var(--amiau-seguranca) !important;
+}
+
+/* Tabelas estilizadas */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table th {
+  background: linear-gradient(135deg, var(--amiau-dark) 0%, #34495E 100%);
+  color: white;
+  font-weight: 600;
+}
+
+table tr:nth-child(even) {
+  background-color: #F8F9FA;
+}
+
+/* Links mais visíveis */
+a {
+  color: var(--amiau-confianca);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--amiau-conexao);
+  text-decoration: underline;
+}
+
+/* Botões customizados */
+.button--primary {
+  background: linear-gradient(135deg, var(--amiau-confianca) 0%, var(--amiau-seguranca) 100%);
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(78, 205, 196, 0.4);
+}
+
+/* Animações suaves */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-wrapper {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .pillar-card {
+    padding: 1.5rem;
+  }
 }
