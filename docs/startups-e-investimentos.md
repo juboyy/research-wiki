@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Startups e Investimentos
 
+<span class="audience-badge badge-intermediario">🟡 Intermediário</span>
+
 ## Mapeamento por Pilar
 
 ### Conexão (Pet Tech)

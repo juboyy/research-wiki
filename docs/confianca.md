@@ -1,5 +1,7 @@
 # Confiança: Cuidados com Idosos e PCDs
 
+<span class="audience-badge badge-iniciante">🟢 Iniciante</span>
+
 A terceira vertente do projeto AMIAU foca em tecnologias assistivas para **idosos** e **pessoas com deficiência (PCDs)**, promovendo autonomia, dignidade e qualidade de vida.
 
 ## O Desafio do Envelhecimento

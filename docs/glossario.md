@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Glossário
 
+<span class="audience-badge badge-iniciante">🟢 Iniciante</span>
+
 ## Termos Científicos
 
 ### Consciência (Consciousness)

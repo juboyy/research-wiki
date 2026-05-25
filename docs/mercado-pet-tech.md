@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Mercado Pet Tech
 
+<span class="audience-badge badge-intermediario">🟡 Intermediário</span>
+
 ## Resumo Executivo
 
 O mercado global de Pet Tech atingiu **$7,5 bilhões em 2024** (Grand View Research, 2025) com CAGR projetado de 15,2% até 2030. O segmento de wearables representa $1,8B (24% do total), crescendo a 22% CAGR — o mais rápido do setor.

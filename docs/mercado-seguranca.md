@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Mercado de Segurança Pública
 
+<span class="audience-badge badge-intermediario">🟡 Intermediário</span>
+
 ## Resumo Executivo
 
 O mercado global de tecnologias para segurança pública, incluindo K9 tech, alcançou **$12,8 bilhões em 2024** (MarketsandMarkets, 2025). O segmento de dispositivos vestíveis para unidades K9 cresce a **28% CAGR** — triplo da média do setor de defesa.

@@ -1,5 +1,7 @@
 # Segurança: Polícia e Segurança Pública
 
+<span class="audience-badge badge-iniciante">🟢 Iniciante</span>
+
 Aplicações de IA e wearables em segurança pública representam uma fronteira crítica onde tecnologia pode salvar vidas — humanas e animais.
 
 ## Cães Policiais e Wearables

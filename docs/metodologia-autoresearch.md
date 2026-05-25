@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Metodologia AutoResearch
 
+<span class="audience-badge badge-intermediario">🟡 Intermediário</span>
+
 ## Princípio Fundamental
 
 AutoResearchClaw não é um "gerador de conteúdo". É um **sistema de pesquisa estruturada** que automatiza etapas mecânicas da investigação científica, preservando julgamento humano (ou agente) nos pontos críticos.

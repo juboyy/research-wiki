@@ -1,5 +1,7 @@
 # Arquitetura do CIH
 
+<span class="audience-badge badge-avancado">🔴 Avançado</span>
+
 ## O Consciousness Interface Harness
 
 O CIH é a arquitetura central do projeto AMIAU — um middleware de 4 camadas que media entre sinais acústicos brutos, dados sensoriais contextuais e geração de linguagem natural.

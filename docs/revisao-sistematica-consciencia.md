@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # Revisão Sistemática: Consciência Animal
 
+<span class="audience-badge badge-avancado">🔴 Avançado</span>
+
 ## Resumo da Revisão
 
 **Objetivo:** Sintetizar evidências de consciência em não-humanos publicadas 2012-2026.  

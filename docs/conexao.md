@@ -1,5 +1,7 @@
 # Conexão: Relação Pessoal e Familiar com Pets
 
+<span class="audience-badge badge-iniciante">🟢 Iniciante</span>
+
 A conexão entre humanos e animais de estimação é uma das relações mais antigas e profundas da humanidade. A IA pode não apenas facilitar, mas **transformar** essa relação.
 
 ## O Problema da Comunicação Unidirecional

@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Protocolos de Comunicação
 
+<span class="audience-badge badge-avancado">🔴 Avançado</span>
+
 ## Visão Geral
 
 A arquitetura AMIAU utiliza uma stack de comunicação em 4 camadas, projetada para balancear latência, consumo energético e resiliência em redes adversas.

@@ -4,6 +4,8 @@ sidebar_position: 3
 
 # Mercado de Acessibilidade e Silver Economy
 
+<span class="audience-badge badge-intermediario">🟡 Intermediário</span>
+
 ## Resumo Executivo
 
 O mercado global de tecnologia assistiva para idosos e PCDs atingiu **$31,2 bilhões em 2024** (WHO, 2025), com CAGR de 8,7%. O segmento de wearables de saúde para idosos cresce a **18% CAGR**, impulsionado pelo envelhecimento global e pela pandemia COVID-19.

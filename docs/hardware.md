@@ -1,5 +1,7 @@
 # Hardware e Eletrônica
 
+<span class="audience-badge badge-avancado">🔴 Avançado</span>
+
 ## Visão Geral do Sistema
 
 O AMIAU collar é um dispositivo wearable de edge-AI que captura vocalizações animais, processa localmente e transmite traduções para um aplicativo mobile pareado.

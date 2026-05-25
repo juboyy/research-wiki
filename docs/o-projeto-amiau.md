@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # O Projeto AMIAU
 
+<span class="audience-badge badge-iniciante">🟢 Iniciante</span>
+
 ## Missão
 
 Criar infraestrutura tecnológica de comunicação interespécies baseada em evidências científicas, com aplicações mensuráveis em bem-estar animal, segurança pública e saúde assistiva.

@@ -1,5 +1,7 @@
 # Software e Firmware
 
+<span class="audience-badge badge-avancado">🔴 Avançado</span>
+
 ## Arquitetura de Software (FreeRTOS)
 
 | Tarefa | Core | Prioridade | Função |

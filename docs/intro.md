@@ -1,5 +1,7 @@
 # AMIAU Research Wiki
 
+<span class="audience-badge badge-iniciante">🟢 Iniciante</span>
+
 Bem-vindo à **AMIAU Research Wiki** — uma revista e enciclopédia colaborativa sobre inteligência artificial, consciência, comunicação animal, IoT e wearables.
 
 ## Sobre o Projeto

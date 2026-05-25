@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # API Reference
 
+<span class="audience-badge badge-avancado">🔴 Avançado</span>
+
 ## Base URL
 ```
 https://api.amiau.org/v1
