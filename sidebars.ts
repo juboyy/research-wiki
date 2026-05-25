@@ -5,6 +5,7 @@ export default {
       label: '📖 Para Leitores',
       collapsed: false,
       items: [
+        'o-projeto-amiau',
         'intro',
         'como-usar-esta-wiki',
         'glossario',
