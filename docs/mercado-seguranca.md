@@ -36,7 +36,7 @@ O mercado global de tecnologias para segurança pública, incluindo K9 tech, alc
 
 ### Forense e Investigação ($2,1B, 17%)
 - **Análise digital**: recuperação de dados, blockchain forensics
-- **DNA rápido**: identificação em campo em <2h
+- **DNA rápido**: identificação em campo em &lt;2h
 - **Documentoscopia digital**: autenticação de documentos com IA
 
 ## Dinâmica Geográfica

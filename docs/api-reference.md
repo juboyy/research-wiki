@@ -39,7 +39,7 @@ Registra nova coleira no sistema.
 }
 ```
 
-#### GET /collar/{collar_id}/telemetry
+#### GET /collar/\{collar_id\}/telemetry
 Retorna dados telemétricos mais recentes.
 
 **Query params:**

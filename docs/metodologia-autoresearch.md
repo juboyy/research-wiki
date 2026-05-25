@@ -38,7 +38,7 @@ AutoResearchClaw não é um "gerador de conteúdo". É um **sistema de pesquisa 
 - **Exclusão por qualidade**: Estudos Baixa são excluídos da síntese principal, mencionados em apêndice
 
 ### 6. Síntese e Interpretação (Agent)
-- **Técnica**: Narrativa qualitativa + meta-análise quando viável (N≥3, heterogeneidade I²<50%)
+- **Técnica**: Narrativa qualitativa + meta-análise quando viável (N≥3, heterogeneidade I²&lt;50%)
 - **Visualização**: Forest plots (meta-análise), diagramas de fluxo (revisão)
 - **Identificação de gaps**: Lacunas explícitas no conhecimento atual
 
@@ -57,7 +57,7 @@ AutoResearchClaw não é um "gerador de conteúdo". É um **sistema de pesquisa 
   - [ ] 70% primárias (peer-reviewed)
   - [ ] Todos os DOIs/links verificáveis
   - [ ] Nenhum "lorem ipsum" ou placeholder
-  - [ ] Abstract <250 palavras
+  - [ ] Abstract &lt;250 palavras
   - [ ] Word count >4500
   - [ ] Zero frases AI-SLOP (verificação manual por amostragem)
 - **Output**: Artigo pronto para publicação
@@ -72,7 +72,7 @@ AutoResearchClaw não é um "gerador de conteúdo". É um **sistema de pesquisa 
 | Dados quantitativos | 5+ pontos | 10+ pontos |
 | Frases AI-SLOP | 0 | 0 |
 | Links quebrados | 0 | 0 |
-| Tempo de geração | <4h | ~2h |
+| Tempo de geração | &lt;4h | ~2h |
 
 ## Limitações Conhecidas
 

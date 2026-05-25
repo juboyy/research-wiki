@@ -15,14 +15,14 @@ A arquitetura AMIAU utiliza uma stack de comunicação em 4 camadas, projetada p
 #### BLE 5.3 (Preferencial)
 - **Uso**: Sincronização de dados, comandos, OTA updates
 - **Throughput**: 2 Mbps
-- **Consumo**: <10mA ativo, <5μA standby
+- **Consumo**: &lt;10mA ativo, &lt;5μA standby
 - **Alcance**: 100m LOS, 30m indoor
 - **Segurança**: AES-128, pairing com MITM protection
 
 #### LoRa (Fallback Rural)
 - **Uso**: Áreas sem cobertura celular/WiFi
 - **Throughput**: 0,3-50 kbps (depende SF)
-- **Consumo**: ~40mA TX, <1μA sleep
+- **Consumo**: ~40mA TX, &lt;1μA sleep
 - **Alcance**: 2km urbano, 15km rural
 - **Frequência**: 915MHz (Américas), 868MHz (Europa), 923MHz (Ásia)
 
@@ -56,7 +56,7 @@ A arquitetura AMIAU utiliza uma stack de comunicação em 4 camadas, projetada p
 #### gRPC (Microserviços Internos)
 - **Serviços**: behavior-analysis, health-monitor, communication-engine
 - **Formato**: Protocol Buffers v3
-- **Latência**: <10ms intra-cluster
+- **Latência**: &lt;10ms intra-cluster
 
 ### Camada 4: Cloud → Cliente
 

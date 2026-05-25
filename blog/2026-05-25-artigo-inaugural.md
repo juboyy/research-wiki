@@ -25,7 +25,7 @@ O problema não é de empatia, mas de **arquitetura informacional**. O cão tran
 
 **Ponte 1 — Consciência**: A neurociência estabeleceu, com nível de evidência que satisfaz critérios de inferência científica, que animais não-humanos possuem experiência subjetiva. A Declaração de Cambridge (2012), assinada por neurocientistas de Harvard, Cambridge e MIT, afirmou que "substratos neurais geradores de consciência estão presentes em vertebrados não-humanos e incluindo todos os mamíferos e aves". Em 2024, a Declaração de Nova York, liderada por filósofos da NYU, expandiu para cefalópodes e crustáceos decápodes, baseada em evidências de dor nociceptiva com valência afetiva.
 
-**Ponte 2 — IoT**: A Lei de Moore, em sua extensão para sensores MEMS, reduziu o custo de acelerômetros de $5.000 (2000) para $0,50 (2024). Um wearable para cão em 2024 custa $40-120, pesa <50g, dura 7-14 dias em uma bateria, e transmite via BLE + LTE-M. A capacidade de capturar dados fisiológicos em tempo real existe; o que falta é a interpretação.
+**Ponte 2 — IoT**: A Lei de Moore, em sua extensão para sensores MEMS, reduziu o custo de acelerômetros de $5.000 (2000) para $0,50 (2024). Um wearable para cão em 2024 custa $40-120, pesa &lt;50g, dura 7-14 dias em uma bateria, e transmite via BLE + LTE-M. A capacidade de capturar dados fisiológicos em tempo real existe; o que falta é a interpretação.
 
 ### 1.3 A Terceira Ponte — IA como Tradutor Estrutural
 
@@ -52,7 +52,7 @@ A Tabela 1 sintetiza 89 estudos incluídos em revisão sistemática PRISMA-adapt
 
 ### 2.2 O Caso dos Corvos: Consciência Sensorial Neural
 
-Nieder et al. (2020), publicado em *Science*, fornece a evidência mais forte de consciência em não-mamíferos. Usando eletrofisiologia de unicelular em corvos (corvídeos), encontraram neurônios no nidopallium caudolateral (homólogo funcional do córtex pré-frontal humano) que respondiam **apenas quando o animal percebia um estímulo**, não quando o mesmo estímulo era subliminar ou mascarado. A ativação neural correlacionou-se com reporte comportamental de percepção com r=0,89 (p<0,001). Isso satisfaz o critério de "neural correlate of consciousness" (NCC) proposto por Crick & Koch (2003).
+Nieder et al. (2020), publicado em *Science*, fornece a evidência mais forte de consciência em não-mamíferos. Usando eletrofisiologia de unicelular em corvos (corvídeos), encontraram neurônios no nidopallium caudolateral (homólogo funcional do córtex pré-frontal humano) que respondiam **apenas quando o animal percebia um estímulo**, não quando o mesmo estímulo era subliminar ou mascarado. A ativação neural correlacionou-se com reporte comportamental de percepção com r=0,89 (p&lt;0,001). Isso satisfaz o critério de "neural correlate of consciousness" (NCC) proposto por Crick & Koch (2003).
 
 A implicação é radical: se um pássaro de 300g possui NCC, então a consciência não requer neocórtex laminado. O substrato suficiente é uma arquitetura funcional de integração informacional — que pode ser replicada, em princípio, em silício.
 
@@ -68,9 +68,9 @@ Schwitzgebel (2025) argumenta que se aceitamos consciência em corvos baseados e
 
 Desenvolvida pelo AMIAU Project, a CIH é uma arquitetura de 4 camadas para mediação humano-animal-IA:
 
-**Camada 1 — Captação**: Sensores MEMS (IMU 9-DOF, PPG, temperatura, microfone) em wearable <30g. Frequência de amostragem: 100Hz IMU, 1Hz fisiológico, 16kHz áudio. Consumo: 15mA ativo, 2mA standby. Comunicação: BLE 5.3 para smartphone/LTE-M gateway.
+**Camada 1 — Captação**: Sensores MEMS (IMU 9-DOF, PPG, temperatura, microfone) em wearable &lt;30g. Frequência de amostragem: 100Hz IMU, 1Hz fisiológico, 16kHz áudio. Consumo: 15mA ativo, 2mA standby. Comunicação: BLE 5.3 para smartphone/LTE-M gateway.
 
-**Camada 2 — Processamento de Borda**: Microcontrolador ARM Cortex-M4F (120MHz) executa pré-processamento (filtro Kalman para IMU, detecção de picos para PPG, FFT para áudio). Latência: <50ms. Memória: 256KB RAM, 2MB Flash. Modelos leves (TensorFlow Lite Micro) para classificação comportamental em tempo real.
+**Camada 2 — Processamento de Borda**: Microcontrolador ARM Cortex-M4F (120MHz) executa pré-processamento (filtro Kalman para IMU, detecção de picos para PPG, FFT para áudio). Latência: &lt;50ms. Memória: 256KB RAM, 2MB Flash. Modelos leves (TensorFlow Lite Micro) para classificação comportamental em tempo real.
 
 **Camada 3 — Nuvem**: Ingestão via MQTT + Kafka. Processamento em GPU cloud para modelos grandes (Whisper para vocalização, YOLO para visão, BERT fine-tuned para contexto). Armazenamento: time-series InfluxDB + documentos MongoDB.
 
@@ -87,8 +87,8 @@ Exemplo: handler policial pressiona botão no smartphone → comando via BLE →
 | Métrica | Valor | Fonte | Limitação |
 |---------|-------|-------|-----------|
 | Precisão classificação comportamental | 87% | Hammond et al., 2023 | Dataset desbalanceado; 70% "inativo" |
-| Latência alerta crítico | <3s | AMIAU internal | Requer LTE-M; BLE não alcança |
-| Bateria (uso moderado) | 10 dias | AMIAU internal | Temperatura <0°C reduz 40% |
+| Latência alerta crítico | &lt;3s | AMIAU internal | Requer LTE-M; BLE não alcança |
+| Bateria (uso moderado) | 10 dias | AMIAU internal | Temperatura &lt;0°C reduz 40% |
 | Falsos positivos (ansiedade) | 13% | AMIAU internal | Contexto não-modelado (trovão, fogos) |
 | Custo de manufatura | $28/unidade | AMIAU internal | Não inclui R&D amortizado |
 

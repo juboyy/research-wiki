@@ -29,7 +29,7 @@ Arquitetura de 4 camadas desenvolvida pelo AMIAU Project para mediar comunicaç�
 Processamento de dados no dispositivo ("na borda" da rede) em vez de enviar para nuvem. Reduz latência, aumenta privacidade, economiza bateria. Essencial para wearables de animais em campo.
 
 ### BLE (Bluetooth Low Energy)
-Protocolo wireless de baixo consumo para dispositivos IoT. Alcance ~100m, consumo <10mA em standby. Usado em coleiras inteligentes para comunicação com smartphones.
+Protocolo wireless de baixo consumo para dispositivos IoT. Alcance ~100m, consumo &lt;10mA em standby. Usado em coleiras inteligentes para comunicação com smartphones.
 
 ### LoRa (Long Range)
 Protocolo de comunicação de longo alcance (até 15km rural, 2km urbano) e baixíssimo consumo. Ideal para rastreamento de animais em áreas remotas.
@@ -41,7 +41,7 @@ Protocolo de mensagens lightweight para IoT. Publish/subscribe, overhead mínimo
 Sensor composto de acelerômetro + giroscópio + magnetômetro. Mede orientação, movimento, vibração. Usado para classificar comportamento animal (andar, correr, dormir, coçar).
 
 ### MEMS (Micro-Electro-Mechanical Systems)
-Tecnologia de miniaturização de sensores mecânicos em chips de silício. Permite sensores baratos (<$5) em wearables de massa.
+Tecnologia de miniaturização de sensores mecânicos em chips de silício. Permite sensores baratos (`<$5`) em wearables de massa.
 
 ### Over-the-Air (OTA) Update
 Atualização de firmware sem fio, via BLE ou WiFi. Crítico para correção de bugs e adição de funcionalidades em dispositivos já implantados.
