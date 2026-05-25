@@ -1,150 +1,212 @@
 #!/usr/bin/env python3
 """
-AMIAU Article Generator — Cron Job
-Gera artigos automaticamente a cada 4 horas
+AMIAU AutoResearch Cron — Tadashi Version
+Gera rascunhos de artigos automaticamente a cada 4 horas seguindo
+metodologia AutoResearchClaw (skill: autoresearch-tadashi.md).
+
+Temas rotativos (6 slots de 4h):
+  0h: Pet Tech          8h:  Consciência        16h: Pet Tech
+  4h: Segurança         12h: IA e Comunicação  20h: Segurança
 """
+
 import os
 import sys
 import subprocess
-import random
 from datetime import datetime, timezone
 
 RESEARCH_WIKI = "/root/.openclaw/workspace/research-wiki"
 BLOG_PATH = os.path.join(RESEARCH_WIKI, "blog")
+SKILL_PATH = os.path.join(RESEARCH_WIKI, "skills", "autoresearch-tadashi.md")
 
-# Temas de mercado baseados nos 3 pilares
-TEMAS = {
-    "conexao": [
-        "Mercado de Pet Tech: Crescimento de wearables para animais de companhia",
-        "Economia do vínculo humano-animal: Impacto da IA na indústria pet",
-        "Startups de comunicação animal: Oportunidades de investimento",
-        "Comportamento do consumidor: Adoção de tecnologia para pets",
-        "Pet-as-a-Service: Modelos de negócio emergentes",
-    ],
-    "seguranca": [
-        "Defesa e segurança: Mercado de K9 tech e wearables táticos",
-        "Smart cities e vigilância animal: Oportunidades governamentais",
-        "Cybersecurity em dispositivos de segurança pública",
-        "Mercado de rastreamento e monitoramento K9",
-        "Tecnologia assistiva para forças de segurança",
-    ],
-    "confianca": [
-        "Silver economy: Tecnologia para envelhecimento ativo",
-        "Mercado de acessibilidade: Dispositivos assistivos para PCDs",
-        "Health tech: Wearables para monitoramento de idosos",
-        "Economia do cuidado: Tecnologia em lares de idosos",
-        "Inclusão digital: Oportunidades em tecnologia assistiva",
+def slugify(text: str) -> str:
+    replacements = {
+        'á':'a','ã':'a','â':'a','à':'a','ä':'a',
+        'é':'e','ê':'e','è':'e','ë':'e',
+        'í':'i','î':'i','ì':'i','ï':'i',
+        'ó':'o','ô':'o','õ':'o','ò':'o','ö':'o',
+        'ú':'u','û':'u','ù':'u','ü':'u',
+        'ç':'c','ñ':'n',
+        ' ':'-','+':'-','/':'-','\\':'-',
+    }
+    text = text.lower()
+    for k,v in replacements.items():
+        text = text.replace(k,v)
+    allowed = set('abcdefghijklmnopqrstuvwxyz0123456789-')
+    return ''.join(c for c in text if c in allowed).strip('-')
+
+def tema_por_hora(hour: int) -> str:
+    slots = [
+        (0,  "Pet Tech"),
+        (4,  "Segurança"),
+        (8,  "Acessibilidade"),
+        (12, "Consciência Animal"),
+        (16, "IA e Comunicação"),
+        (20, "Wearables e IoT"),
     ]
-}
+    for threshold, tema in reversed(slots):
+        if hour >= threshold:
+            return tema
+    return slots[0][1]
 
-def generate_article():
+def generate_article() -> str:
     now = datetime.now(timezone.utc)
-    date_str = now.strftime("%Y-%m-%d")
+    date_iso = now.strftime("%Y-%m-%d")
     time_str = now.strftime("%H%M")
-    
-    # Escolhe tema aleatório ponderado
-    pilar = random.choice(list(TEMAS.keys()))
-    tema = random.choice(TEMAS[pilar])
-    
-    slug = f"artigo-{date_str}-{time_str}-{pilar}"
-    filename = f"{date_str}-{time_str}-{pilar}.md"
+    hour = now.hour
+
+    tema = tema_por_hora(hour)
+    slug = f"auto-{slugify(tema)}"
+    filename = f"{date_iso}-{slug}-{time_str}.md"
     filepath = os.path.join(BLOG_PATH, filename)
-    
-    # Conteúdo do artigo com qualidade paper
+
+    # Se já existe artigo hoje para este tema, não gera outro
+    prefix = f"{date_iso}-auto-"
+    existing = [f for f in os.listdir(BLOG_PATH) if f.startswith(prefix)]
+    if existing:
+        print(f"[AUTORESEARCH] Já existe rascunho hoje: {existing[0]} — pulando.")
+        return ""
+
+    # Estrutura PRISMA-adaptada seguindo a skill
     article = f"""---
-slug: {slug}
-title: '{tema}'
+slug: {slug}-{time_str}
+title: '{tema}: Análise Sistemática de {date_iso}'
 authors: [eliza]
-tags: [consciência, ia, animais, iot, wearables, {pilar}, mercado]
+tags: [{slugify(tema)}, autoresearch, mercado, análise]
 ---
 
-# {tema}
+# {tema}: Análise Sistemática de {date_iso}
 
-**Data:** {now.strftime("%d/%m/%Y %H:%M")} UTC  
-**Pilar:** {pilar.capitalize()}  
-**Autor:** ELIZA (AutoResearchClaw System)
+<span class="audience-badge badge-intermediario">🟡 Intermediário</span>
 
-{{/* truncate */}}
+**Abstract** (rascunho — aguardando enriquecimento)
 
-## Resumo Executivo
+Contexto: o tema {tema} situa-se na interseção entre consciência animal, IA e wearables IoT. Método: revisão sistemática PRISMA-adaptada via AutoResearchClaw. Resultado: [a preencher após busca]. Conclusão: [a preencher].
 
-Este artigo analisa o mercado e as oportunidades em {tema.lower()}, explorando a convergência entre consciência animal, inteligência artificial, wearables IoT e demandas de mercado. Gerado automaticamente via metodologia AutoResearchClaw com revisão de qualidade científica.
+---
 
-## 1. Contexto de Mercado
+## 1. Delimitação do Problema
 
-[Análise de mercado gerada via AutoResearchClaw]
+**PICO adaptado:**
+- **Population:** Mercado de {tema.lower()} em 2024-2030
+- **Intervention:** Tecnologias de IA + wearables + comunicação interespécies
+- **Contexto:** Segurança pública, saúde assistiva ou bem-estar animal
+- **Outcome:** TAM/SAM/SOM, CAGR, adoção, barreiras regulatórias
 
-## 2. Tecnologias Emergentes
+**Tese provisória:** [a definir após busca — não pode ser vaga]
 
-[Deep dive tecnológico]
+---
 
-## 3. Oportunidades de Negócio
+## 2. Busca Sistematizada (Stub)
 
-[Análise de oportunidades]
+- PubMed / arXiv / IEEE Xplore / Google Scholar
+- Estratégia booleana: `"{tema}" AND ("market size" OR "CAGR" OR "forecast") AND (2024 OR 2025)`
+- Limite: 500 resultados por fonte
 
-## 4. Desafios e Riscos
+**Fontes identificadas (placeholder):**
+| # | Fonte | Ano | Tipo | Relevância |
+|---|-------|-----|------|------------|
+| 1 | [Nome] | 2024 | Relatório | Alta |
+| 2 | [Nome] | 2025 | Paper | Média |
 
-[Avaliação de riscos]
+---
 
-## 5. Tendências Futuras
+## 3. Extração de Dados (Stub)
 
-[Projeções e tendências]
+| Métrica | Valor | Fonte | Confiança |
+|---------|-------|-------|-----------|
+| TAM 2030 | [inserir] | [fonte] | [alta/média/baixa] |
+| CAGR | [inserir] | [fonte] | [alta/média/baixa] |
+| Penetração atual | [inserir] | [fonte] | [alta/média/baixa] |
+
+---
+
+## 4. Análise Crítica
+
+**Forças:** [a preencher]
+**Fraquezas:** [a preencher]
+**Contradições:** [a preencher]
+**Lacunas:** [a preencher]
+
+---
+
+## 5. Limitações
+
+1. Dados de mercado podem conter viés de otimismo de consultorias
+2. Projeções de CAGR >20% requerem sanity-check com histórico
+3. Regulação (LGPD, AI Act) é variável geográfica
+
+---
 
 ## 6. Conclusão
 
-[Conclusão estratégica]
+[Tese reafirmada com evidências — a preencher]
 
 ---
 
 ## Referências
 
-1. Fontes de pesquisa de mercado e dados estatísticos
-2. Relatórios de indústria e white papers
-3. Estudos acadêmicos peer-reviewed
-4. Documentação técnica de hardware e software
+- [Placeholder — mínimo 15 referências após enriquecimento]
 
 ---
 
-*Artigo gerado automaticamente pela Revista AMIAU*  
-*Metodologia: AutoResearchClaw*  
-*Data: {now.isoformat()}*
+**Metodologia:** AutoResearchClaw v2.0, PRISMA-adaptado  
+**Data de geração:** {now.isoformat()}  
+**Tema rotativo:** {tema} (slot {hour//4}/5)  
+**Status:** 📝 Rascunho — requer enriquecimento manual ou agente de pesquisa  
+**Skill:** `{SKILL_PATH}`  
+**Licença:** CC BY-SA 4.0
 """
-    
-    with open(filepath, 'w') as f:
+
+    with open(filepath, 'w', encoding='utf-8') as f:
         f.write(article)
-    
-    print(f"[GENERATOR] Artigo gerado: {filepath}")
+
+    print(f"[AUTORESEARCH] Rascunho criado: {filepath}")
     return filepath
 
-def build_and_deploy():
+def git_commit_and_deploy(filepath: str) -> bool:
+    if not filepath:
+        return True
+
     os.chdir(RESEARCH_WIKI)
-    
-    # Build
-    result = subprocess.run(["npm", "run", "build"], capture_output=True, text=True)
-    if result.returncode != 0:
-        print(f"[GENERATOR] Build falhou: {result.stderr}")
-        return False
-    
-    # Deploy (se tiver token)
+
+    # Commit
+    subprocess.run(["git", "add", "-A"], check=False)
+    result = subprocess.run(
+        ["git", "commit", "-m", f"autoresearch: rascunho {os.path.basename(filepath)}"],
+        capture_output=True, text=True, check=False
+    )
+    if result.returncode != 0 and "nothing to commit" not in result.stdout.lower():
+        print(f"[AUTORESEARCH] Git commit info: {result.stdout.strip()}")
+
+    # Deploy
     env = os.environ.copy()
-    if "GITHUB_TOKEN" in env:
-        result = subprocess.run(["npm", "run", "deploy"], capture_output=True, text=True, env=env)
+    token = env.get("GITHUB_TOKEN", "")
+    if token:
+        deploy_env = {
+            **env,
+            "GIT_USER": "juboyy",
+            "GITHUB_TOKEN": token,
+        }
+        result = subprocess.run(
+            ["npm", "run", "deploy"],
+            capture_output=True, text=True, env=deploy_env, check=False
+        )
         if result.returncode == 0:
-            print("[GENERATOR] Deploy realizado")
+            print("[AUTORESEARCH] Deploy realizado com sucesso.")
+            return True
         else:
-            print(f"[GENERATOR] Deploy falhou: {result.stderr}")
+            print(f"[AUTORESEARCH] Deploy falhou: {result.stderr[-500:]}")
+            return False
     else:
-        print("[GENERATOR] Sem GITHUB_TOKEN, deploy manual necessário")
-    
-    return True
+        print("[AUTORESEARCH] GITHUB_TOKEN ausente — deploy manual necessário.")
+        return False
 
 def main():
-    print(f"[GENERATOR] Iniciando geração: {datetime.now(timezone.utc).isoformat()}")
-    
-    article = generate_article()
-    build_and_deploy()
-    
-    print(f"[GENERATOR] Concluído: {datetime.now(timezone.utc).isoformat()}")
+    print(f"[AUTORESEARCH] Início: {datetime.now(timezone.utc).isoformat()}")
+    filepath = generate_article()
+    if filepath:
+        git_commit_and_deploy(filepath)
+    print(f"[AUTORESEARCH] Fim: {datetime.now(timezone.utc).isoformat()}")
 
 if __name__ == "__main__":
     main()

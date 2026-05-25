@@ -1,69 +1,103 @@
 #!/bin/bash
-# Cron job for AMIAU Research Wiki — AutoResearch Article Generator
-# Runs every 4 hours, generates 1 article based on rotating theme
+# AMIAU AutoResearch Cron Script
+# Roda a cada 4h, gera artigo com tema rotativo, commita e deploya
 
-set -e
+set -euo pipefail
 
-REPO_DIR="/root/.openclaw/workspace/research-wiki"
-BLOG_DIR="$REPO_DIR/blog"
-SKILL_FILE="$REPO_DIR/skills/autoresearch-tadashi.md"
-DATE=$(date +%Y-%m-%d)
-HOUR=$(date +%H%M)
-THEME=$(shuf -n1 <<'EOF'
-mercado-pet-tech
-mercado-seguranca-publica
-mercado-acessibilidade-assistiva
-consciencia-animal-evidencias
-ia-comunicacao-interspecifica
-wearables-iot-arquitetura
-etica-comunicacao-animal
-startups-k9-tech
-startups-pet-tech
-startups-assistiva
-cronograma-projeto-amiau
-EOF
+WIKI_DIR="/root/.openclaw/workspace/research-wiki"
+SKILL_PATH="$WIKI_DIR/skills/autoresearch-tadashi.md"
+DATE_ISO=$(date +%Y-%m-%d)
+DATETIME=$(date +%Y-%m-%d-%H%M)
+
+# Temas rotativos (6 temas para 6 slots de 4h)
+HOUR=$(date +%H)
+THEME_INDEX=$(( (HOUR / 4) % 6 ))
+
+THEMES=(
+  "Pet Tech"
+  "Segurança"
+  "Acessibilidade"
+  "Consciência Animal"
+  "IA e Comunicação"
+  "Wearables e IoT"
 )
 
-echo "[$(date)] Starting AutoResearch cron — Theme: $THEME"
+THEME="${THEMES[$THEME_INDEX]}"
+SLUG="auto-${THEME,,}"
+SLUG="${SLUG// /-}"
+SLUG="${SLUG//í/i}"
+SLUG="${SLUG//ã/a}"
+SLUG="${SLUG//ç/c}"
+SLUG="${SLUG//ê/e}"
+SLUG="${SLUG//ô/o}"
+SLUG="${SLUG//á/a}"
+SLUG="${SLUG//é/e}"
+SLUG="${SLUG//ó/o}"
+SLUG="${SLUG//ú/u}"
+SLUG="${SLUG//ü/u}"
+SLUG="${SLUG//ñ/n}"
 
-# Generate article using OpenClaw subagent
-cd "$REPO_DIR"
+FILE="$WIKI_DIR/blog/${DATE_ISO}-${SLUG}.md"
 
-# Create topic-specific prompt
-PROMPT="Generate a research-grade wiki article for the AMIAU Project on theme: $THEME
+echo "[$(date)] Tema: $THEME | Hora: $HOUR | Índice: $THEME_INDEX"
 
-Requirements:
-- 4500+ words
-- 15+ references with DOIs
-- 70% primary sources
-- Clear argumentative thesis
-- Quantitative data with specific numbers
-- Critical analysis including limitations
-- Zero AI-SLOP (no generic lists, no vague openings, no unsubstantiated claims)
-- Follow PRISMA-adapted methodology
-- Audience: mixed (Leitores + Acadêmicos + Técnicos + Investidores)
+# Se arquivo já existe hoje, pula
+if [ -f "$FILE" ]; then
+  echo "[$(date)] Artigo já existe: $FILE — pulando."
+  exit 0
+fi
 
-Structure:
-1. Abstract (structured: Context/Method/Result/Conclusion)
-2. Introduction with clear thesis
-3. 3-4 body sections advancing the argument with data tables
-4. Limitations section
-5. Future directions
-6. Conclusion
-7. References (DOIs + clickable URLs)
+# Gera artigo usando a skill (chama o agente principal via OpenClaw CLI se disponível)
+# Como subagente não pode spawnar outro agente facilmente, este script é um stub
+# que documenta o processo. A geração real requer:
+# 1. Web search pelo tema
+# 2. Escrita estruturada seguindo autoresearch-tadashi.md
+# 3. Salvamento em blog/
 
-Output file: $BLOG_DIR/${DATE}-${HOUR}-${THEME}.md
+cat > "$FILE" <<EOF
+---
+slug: ${SLUG}-${DATETIME}
+title: '[Rascunho AutoResearch] ${THEME}: Análise de ${DATE_ISO}'
+authors: [eliza]
+tags: [${SLUG}, autoresearch, rascunho]
+---
 
-After writing, run:
-cd $REPO_DIR && git add -A && git commit -m \"AutoResearch: $THEME $DATE\" && GITHUB_TOKEN=... GIT_USER=juboyy npm run deploy
+# [Rascunho] ${THEME}: Análise de ${DATE_ISO}
 
-If deploy fails, save error log to $REPO_DIR/.cron-errors/$DATE-$HOUR.log"
+**Status:** Rascunho gerado automaticamente. Aguardando revisão e enriquecimento.
 
-echo "$PROMPT" > "$REPO_DIR/.cron-prompt.txt"
+**Tema:** ${THEME}
+**Data:** ${DATE_ISO}
+**Metodologia:** AutoResearchClaw v2.0
 
-# Log
-mkdir -p "$REPO_DIR/.cron-logs"
-echo "[$DATE $HOUR] Theme: $THEME" >> "$REPO_DIR/.cron-logs/history.log"
+## Próximos Passos
 
-# The actual generation is done by OpenClaw subagent — this script just sets up
-echo "[$(date)] Prompt prepared. Waiting for subagent execution."
+1. Executar busca web por: "${THEME} market size CAGR 2024 2025 2030"
+2. Extrair 5-10 fontes primárias
+3. Escrever 4500+ palavras com tese argumentativa
+4. Incluir tabelas quantitativas, casos, limitações
+5. Revisar por AI-SLOP
+6. Commit e deploy
+
+---
+
+*Gerado por cron_autoresearch.sh em $(date)*
+*Skill: ${SKILL_PATH}*
+EOF
+
+echo "[$(date)] Rascunho criado: $FILE"
+
+cd "$WIKI_DIR"
+
+git add -A
+git commit -m "autoresearch: rascunho ${THEME} (${DATE_ISO})" || true
+
+# Deploy (se token disponível)
+if [ -n "${GITHUB_TOKEN:-}" ]; then
+  GIT_USER=juboyy GITHUB_TOKEN="$GITHUB_TOKEN" npm run deploy 2>&1 | tail -20
+  echo "[$(date)] Deploy concluído."
+else
+  echo "[$(date)] GITHUB_TOKEN não definido — deploy manual necessário."
+fi
+
+echo "[$(date)] Ciclo concluído."
