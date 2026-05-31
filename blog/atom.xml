@@ -2,11 +2,79 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://juboyy.github.io/research-wiki/blog</id>
     <title>AMIAU Research Wiki Blog</title>
-    <updated>2026-05-30T00:00:00.000Z</updated>
+    <updated>2026-05-31T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://juboyy.github.io/research-wiki/blog"/>
     <subtitle>AMIAU Research Wiki Blog</subtitle>
     <icon>https://juboyy.github.io/research-wiki/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Pet Tech: Análise Sistemática de 2026-05-31]]></title>
+        <id>https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000</id>
+        <link href="https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000"/>
+        <updated>2026-05-31T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🟡 Intermediário]]></summary>
+        <content type="html"><![CDATA[<span class="audience-badge badge-intermediario">🟡 Intermediário</span>
+<p><strong>Abstract</strong> (rascunho — aguardando enriquecimento)</p>
+<p>Contexto: o tema Pet Tech situa-se na interseção entre consciência animal, IA e wearables IoT. Método: revisão sistemática PRISMA-adaptada via AutoResearchClaw. Resultado: [a preencher após busca]. Conclusão: [a preencher].</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-delimitação-do-problema">1. Delimitação do Problema<a href="https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000#1-delimita%C3%A7%C3%A3o-do-problema" class="hash-link" aria-label="Link direto para 1. Delimitação do Problema" title="Link direto para 1. Delimitação do Problema" translate="no">​</a></h2>
+<p><strong>PICO adaptado:</strong></p>
+<ul>
+<li class=""><strong>Population:</strong> Mercado de pet tech em 2024-2030</li>
+<li class=""><strong>Intervention:</strong> Tecnologias de IA + wearables + comunicação interespécies</li>
+<li class=""><strong>Contexto:</strong> Segurança pública, saúde assistiva ou bem-estar animal</li>
+<li class=""><strong>Outcome:</strong> TAM/SAM/SOM, CAGR, adoção, barreiras regulatórias</li>
+</ul>
+<p><strong>Tese provisória:</strong> [a definir após busca — não pode ser vaga]</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-busca-sistematizada-stub">2. Busca Sistematizada (Stub)<a href="https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000#2-busca-sistematizada-stub" class="hash-link" aria-label="Link direto para 2. Busca Sistematizada (Stub)" title="Link direto para 2. Busca Sistematizada (Stub)" translate="no">​</a></h2>
+<ul>
+<li class="">PubMed / arXiv / IEEE Xplore / Google Scholar</li>
+<li class="">Estratégia booleana: <code>"Pet Tech" AND ("market size" OR "CAGR" OR "forecast") AND (2024 OR 2025)</code></li>
+<li class="">Limite: 500 resultados por fonte</li>
+</ul>
+<p><strong>Fontes identificadas (placeholder):</strong></p>
+<table><thead><tr><th>#</th><th>Fonte</th><th>Ano</th><th>Tipo</th><th>Relevância</th></tr></thead><tbody><tr><td>1</td><td>[Nome]</td><td>2024</td><td>Relatório</td><td>Alta</td></tr><tr><td>2</td><td>[Nome]</td><td>2025</td><td>Paper</td><td>Média</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-extração-de-dados-stub">3. Extração de Dados (Stub)<a href="https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000#3-extra%C3%A7%C3%A3o-de-dados-stub" class="hash-link" aria-label="Link direto para 3. Extração de Dados (Stub)" title="Link direto para 3. Extração de Dados (Stub)" translate="no">​</a></h2>
+<table><thead><tr><th>Métrica</th><th>Valor</th><th>Fonte</th><th>Confiança</th></tr></thead><tbody><tr><td>TAM 2030</td><td>[inserir]</td><td>[fonte]</td><td>[alta/média/baixa]</td></tr><tr><td>CAGR</td><td>[inserir]</td><td>[fonte]</td><td>[alta/média/baixa]</td></tr><tr><td>Penetração atual</td><td>[inserir]</td><td>[fonte]</td><td>[alta/média/baixa]</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-análise-crítica">4. Análise Crítica<a href="https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000#4-an%C3%A1lise-cr%C3%ADtica" class="hash-link" aria-label="Link direto para 4. Análise Crítica" title="Link direto para 4. Análise Crítica" translate="no">​</a></h2>
+<p><strong>Forças:</strong> [a preencher]
+<strong>Fraquezas:</strong> [a preencher]
+<strong>Contradições:</strong> [a preencher]
+<strong>Lacunas:</strong> [a preencher]</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-limitações">5. Limitações<a href="https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000#5-limita%C3%A7%C3%B5es" class="hash-link" aria-label="Link direto para 5. Limitações" title="Link direto para 5. Limitações" translate="no">​</a></h2>
+<ol>
+<li class="">Dados de mercado podem conter viés de otimismo de consultorias</li>
+<li class="">Projeções de CAGR &gt;20% requerem sanity-check com histórico</li>
+<li class="">Regulação (LGPD, AI Act) é variável geográfica</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-conclusão">6. Conclusão<a href="https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000#6-conclus%C3%A3o" class="hash-link" aria-label="Link direto para 6. Conclusão" title="Link direto para 6. Conclusão" translate="no">​</a></h2>
+<p>[Tese reafirmada com evidências — a preencher]</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="referências">Referências<a href="https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000#refer%C3%AAncias" class="hash-link" aria-label="Link direto para Referências" title="Link direto para Referências" translate="no">​</a></h2>
+<ul>
+<li class="">[Placeholder — mínimo 15 referências após enriquecimento]</li>
+</ul>
+<hr>
+<p><strong>Metodologia:</strong> AutoResearchClaw v2.0, PRISMA-adaptado<br>
+<strong>Data de geração:</strong> 2026-05-31T00:00:01.511343+00:00<br>
+<strong>Tema rotativo:</strong> Pet Tech (slot 0/5)<br>
+<strong>Status:</strong> 📝 Rascunho — requer enriquecimento manual ou agente de pesquisa<br>
+<strong>Skill:</strong> <code>/root/.openclaw/workspace/research-wiki/skills/autoresearch-tadashi.md</code><br>
+<strong>Licença:</strong> CC BY-SA 4.0</p>]]></content>
+        <author>
+            <name>ELIZA</name>
+            <uri>https://github.com/juboyy</uri>
+        </author>
+        <category label="pet-tech" term="pet-tech"/>
+        <category label="autoresearch" term="autoresearch"/>
+        <category label="mercado" term="mercado"/>
+        <category label="análise" term="análise"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Pet Tech: Análise Sistemática de 2026-05-30]]></title>
         <id>https://juboyy.github.io/research-wiki/blog/auto-pet-tech-0000</id>
@@ -61,7 +129,7 @@
 </ul>
 <hr>
 <p><strong>Metodologia:</strong> AutoResearchClaw v2.0, PRISMA-adaptado<br>
-<strong>Data de geração:</strong> 2026-05-30T00:00:01.819290+00:00<br>
+<strong>Data de geração:</strong> 2026-05-31T00:00:01.511343+00:00<br>
 <strong>Tema rotativo:</strong> Pet Tech (slot 0/5)<br>
 <strong>Status:</strong> 📝 Rascunho — requer enriquecimento manual ou agente de pesquisa<br>
 <strong>Skill:</strong> <code>/root/.openclaw/workspace/research-wiki/skills/autoresearch-tadashi.md</code><br>
@@ -129,7 +197,7 @@
 </ul>
 <hr>
 <p><strong>Metodologia:</strong> AutoResearchClaw v2.0, PRISMA-adaptado<br>
-<strong>Data de geração:</strong> 2026-05-30T00:00:01.819290+00:00<br>
+<strong>Data de geração:</strong> 2026-05-31T00:00:01.511343+00:00<br>
 <strong>Tema rotativo:</strong> Pet Tech (slot 0/5)<br>
 <strong>Status:</strong> 📝 Rascunho — requer enriquecimento manual ou agente de pesquisa<br>
 <strong>Skill:</strong> <code>/root/.openclaw/workspace/research-wiki/skills/autoresearch-tadashi.md</code><br>
@@ -197,7 +265,7 @@
 </ul>
 <hr>
 <p><strong>Metodologia:</strong> AutoResearchClaw v2.0, PRISMA-adaptado<br>
-<strong>Data de geração:</strong> 2026-05-30T00:00:01.819290+00:00<br>
+<strong>Data de geração:</strong> 2026-05-31T00:00:01.511343+00:00<br>
 <strong>Tema rotativo:</strong> Pet Tech (slot 0/5)<br>
 <strong>Status:</strong> 📝 Rascunho — requer enriquecimento manual ou agente de pesquisa<br>
 <strong>Skill:</strong> <code>/root/.openclaw/workspace/research-wiki/skills/autoresearch-tadashi.md</code><br>
@@ -265,7 +333,7 @@
 </ul>
 <hr>
 <p><strong>Metodologia:</strong> AutoResearchClaw v2.0, PRISMA-adaptado<br>
-<strong>Data de geração:</strong> 2026-05-30T00:00:01.819290+00:00<br>
+<strong>Data de geração:</strong> 2026-05-31T00:00:01.511343+00:00<br>
 <strong>Tema rotativo:</strong> Pet Tech (slot 0/5)<br>
 <strong>Status:</strong> 📝 Rascunho — requer enriquecimento manual ou agente de pesquisa<br>
 <strong>Skill:</strong> <code>/root/.openclaw/workspace/research-wiki/skills/autoresearch-tadashi.md</code><br>
@@ -333,7 +401,7 @@
 </ul>
 <hr>
 <p><strong>Metodologia:</strong> AutoResearchClaw v2.0, PRISMA-adaptado<br>
-<strong>Data de geração:</strong> 2026-05-30T00:00:01.819290+00:00<br>
+<strong>Data de geração:</strong> 2026-05-31T00:00:01.511343+00:00<br>
 <strong>Tema rotativo:</strong> Pet Tech (slot 0/5)<br>
 <strong>Status:</strong> 📝 Rascunho — requer enriquecimento manual ou agente de pesquisa<br>
 <strong>Skill:</strong> <code>/root/.openclaw/workspace/research-wiki/skills/autoresearch-tadashi.md</code><br>
